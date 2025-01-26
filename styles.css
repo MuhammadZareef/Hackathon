@@ -1,0 +1,1083 @@
+@import url('https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+/* https://www.figma.com/design/OCoQSWdGKw6Gen6Dfh5NNc/SMIT---Batch-14---Hackathon?node-id=1-2&p=f */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: 'roboto';
+}
+
+body{
+    height: 100vh;
+    text-align: center;
+}
+
+.header-content{
+    max-width: 1280px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.5rem;
+}
+
+.logo-icon{
+    width: 13rem;
+    height: 2.5rem;
+}
+
+.nav{
+    display: flex;
+    gap: 1.2rem;
+}
+
+@media screen and (min-width:768px) {
+    .nav{
+        display: flex;
+        align-items: center;
+    }
+}
+
+@media screen and (min-width:835px) {
+    .nav{
+        gap: 1.7rem;
+    }
+}
+
+@media screen and (min-width:900px) {
+    .nav{
+        gap: 2.05rem;
+    }
+}
+
+@media screen and (min-width:962px) {
+    .nav{
+        gap: 2.5rem;
+    }
+}
+
+@media screen and (min-width:1024px) {
+    .nav{
+        gap: 3rem;
+    }
+}
+
+@media screen and (min-width:1280px) {
+    .nav{
+        gap: 4rem;
+    }
+}
+
+.nav-link{
+    color: black;
+    font-size: 1.6rem;
+    transform: color 0.1s;
+}
+
+.nav-link:hover{
+    color: rgb(88, 84, 84);
+}
+
+.signIn-button{
+    background-color: black;
+    color: white;
+    border: none;
+    padding: 0.75rem 2.5rem;
+    font-size: 1.2rem;
+}
+
+.signIn-button:hover{
+    background-color: white;
+    color: black;
+    padding: 0.75rem 2.41rem;
+    border: 2px solid black;
+}
+
+@media screen and (min-width:768px) {
+    .signIn-button{
+        display: block;
+    }
+    .menu-button{
+        display: none;
+    }
+    .menu-icon{
+        display: none;
+    }
+}
+
+@media screen and (min-width:800px) {
+    .signIn-button{
+        margin-left: 1rem;
+    }
+}
+
+@media screen and (min-width:840px) {
+    .signIn-button{
+        margin-left: 1.2rem;
+    }
+}
+
+@media screen and (min-width:860px) {
+    .signIn-button{
+        margin-left: 1.7rem;
+    }
+}
+
+@media screen and (min-width:880px) {
+    .signIn-button{
+        margin-left: 2.1rem;
+    }
+}
+
+@media screen and (min-width:900px) {
+    .signIn-button{
+        margin-left: 2.7rem;
+    }
+}
+
+@media screen and (min-width:940px) {
+    .signIn-button{
+        margin-left: 3.2rem;
+    }
+}
+
+@media screen and (min-width:960px) {
+    .signIn-button{
+        margin-left: 3.95rem;
+    }
+}
+
+@media screen and (min-width:980px) {
+    .signIn-button{
+        margin-left: 4.5rem;
+    }
+}
+
+@media screen and (min-width:1000px) {
+    .signIn-button{
+        margin-left: 5.6rem;
+    }
+}
+
+@media screen and (min-width:1050px) {
+    .signIn-button{
+        margin-left: 6rem;
+    }
+}
+
+@media screen and (min-width:1090px) {
+    .signIn-button{
+        margin-left: 7rem;
+    }
+}
+
+@media screen and (min-width:1130px) {
+    .signIn-button{
+        margin-left: 8rem;
+    }
+}
+
+@media screen and (min-width:1155px) {
+    .signIn-button{
+        margin-left: 8.8rem;
+    }
+}
+
+@media screen and (min-width:1165px) {
+    .signIn-button{
+        margin-left: 9.3rem;
+    }
+}
+
+@media screen and (min-width:1200px) {
+    .signIn-button{
+        margin-left: 10rem;
+    }
+}
+
+@media screen and (min-width:1230px) {
+    .signIn-button{
+        margin-left: 10.7rem;
+    }
+}
+
+@media screen and (min-width:1250px) {
+    .signIn-button{
+        margin-left: 11.6rem;
+    }
+}
+
+@media screen and (min-width:1260px) {
+    .signIn-button{
+        margin-left: 12rem;
+    }
+}
+
+@media screen and (min-width:1280px) {
+    .signIn-button{
+        margin-left: 9rem;
+    }
+}
+
+.menu-button{
+    border: none;
+    background-color: white;
+    padding: 0.4rem 0.7rem;
+}
+
+.menu-icon{
+    font-size: 1.75rem;
+}
+
+@media screen and (max-width:768px) {
+    .header-content .nav{
+        position: absolute;
+        top: 70px;
+        left: 0;
+        right: 0;
+        z-index: 1;
+        flex-direction: column;
+        text-align: left;
+        background-color: white;
+        gap: 0;
+        overflow: hidden;
+    }
+    .nav-link{
+        padding-top: 1.5rem;
+        padding-left: 1rem;
+    }
+    .signIn-button{
+        width: 9rem;
+        margin-top: 1.5rem;
+        margin-left: 1rem;
+    }
+    .menu-button{
+        display: block;
+    }
+    #menuList{
+        transition: all 0.5s;
+    }
+}
+
+.main-section{
+    max-width: 1280px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    padding: 1.5rem;
+}
+
+.left-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    animation: slideFromLeft 1s ease forwards;
+    opacity: 0;
+}
+
+@keyframes slideFromLeft {
+
+    0% {
+        opacity: 0;
+        transform: translateX(-100%);
+    }
+
+    100%{
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+.section-heading{
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+.section-description{
+    padding: 1rem;
+    font-size: 1.5rem;
+    font-weight: 300;
+}
+
+.section-button{
+    display: flex;
+}
+
+.start-button{
+    color: white;
+    background-color: black;
+    padding: 0.75rem 2.5rem;
+    font-size: 1.2rem;
+    cursor: pointer;
+    border: none;
+}
+
+.start-button:hover{
+    color: black;
+    padding: 0.66rem 2.4rem;
+    border: 2px solid black;
+    background-color: white;
+}
+
+.right-content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.image-container{
+    height: 45vh;
+    width: 100%;
+    border: none;
+    overflow: hidden;
+}
+
+.section-image{
+    width: 100%;
+    height: 100%;
+}
+
+@media screen and (min-width:768px) {
+    .main-section{
+        flex-direction: row;
+        align-items: start;
+        gap: 0;
+    }
+    .left-content{
+        max-width: 55%;
+        max-height: 1000%;
+        text-align: left;
+        padding: 1rem;
+        gap: 1.5rem;
+        align-items: start;
+    }
+    .right-content{
+        width: 50%;
+    }
+    .section-heading{
+        font-size: 2.5rem;
+    }
+    .section-description{
+        padding: 0;
+        font-size: 1.7rem;
+    }
+    .image-container{
+        height: 25rem;
+    }
+}
+
+@media screen and (min-width:1038px) {
+    .left-content{
+        padding-left: 0.5rem;
+    }
+    .section-heading{
+        font-size: 3rem;
+    }
+    .image-container{
+        height: 25rem;
+    }
+}
+
+@media screen and (min-width:1280px) {
+    .section-heading{
+        font-size: 4rem;
+    }
+    .section-description{
+        font-size: 1.9rem;
+    }
+    .image-container{
+        height: 29rem;
+    }
+}
+
+.card-container{
+    max-width: 1280px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    padding: 1rem;
+    gap: 2rem;
+}
+
+.card-body{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 1rem;
+    gap: 1.5rem;
+    border-radius: 1.1rem;
+    cursor: pointer;
+    border: 3px solid black;
+    transition: all 1s linear 0s;
+}
+
+.card-body:hover{
+    transform: scale(1.05);
+}
+
+.card-title{
+    display: flex;
+    align-items: center;
+    justify-content: start;
+}
+
+.card-image{
+    max-width: 3rem;
+    max-height: 2rem;
+}
+
+.card-heading{
+    font-size: 1rem;
+    font-weight: 400;
+    margin-left: 0.8rem;
+}
+
+.card-description{
+    font-size: 1rem;
+    text-align: left;
+    font-weight: 300;
+}
+
+@media screen and (min-width:520px) {
+    .card-container{
+        padding: 2rem;
+    }
+    .card-heading{
+        font-size: 1.6rem;
+    }
+    .card-description{
+        font-size: 1.15rem;
+    }
+}
+
+@media screen and (min-width:580px) {
+    .card-heading{
+        font-size: 2rem;
+    }
+    .card-description{
+        font-size: 1.3rem;
+    }
+    .card-body{
+        padding: 1.5rem;
+    }
+    .card-image{
+        max-width: 4rem;
+        max-height: 3rem;
+    }
+}
+
+@media screen and (min-width:670px) {
+    .card-container{
+        padding: 3rem;
+    }
+    .card-heading{
+        font-size: 2.5rem;
+    }
+    .card-description{
+        font-size: 1.5rem;
+    }
+    .card-body{
+        padding: 2rem;
+    }
+}
+
+@media screen and (min-width:800px) {
+    .card-container{
+        padding: 4rem;
+    }
+}
+
+@media screen and (min-width:900px) {
+    .card-container{
+        grid-template-columns: repeat(2, 1fr);
+        padding: 2rem;
+    }
+    .card-heading{
+        font-size: 1.4rem;
+        margin-left: 1rem;
+    }
+    .card-description{
+        font-size: 1rem;
+    }
+}
+
+@media screen and (min-width:1050px) {
+    .card-container{
+        padding: 3rem;
+    }
+    .card-heading{
+        font-size: 1.7rem;
+        margin-left: 1.1rem;
+    }
+    .card-description{
+        font-size: 1.2rem;
+    }
+    .card-image{
+        max-width: 5rem;
+        max-height: 4rem;
+    }
+}
+
+@media screen and (min-width:1100px) {
+    .card-heading{
+        font-size: 1.8rem;
+        margin-left: 1.2rem;
+    }
+    .card-description{
+        font-size: 1.5rem;
+    }
+}
+
+@media screen and (min-width:1200px) {
+    .card-container{
+        grid-template-columns: repeat(3, 1fr);
+        gap: 1.5rem;
+        padding: 1.5rem;
+    }
+    .card-body{
+        padding: 1.2rem;
+    }
+    .card-heading{
+        font-size: 1.4rem;
+        margin-left: 1rem;
+    }
+    .card-description{
+        font-size: 1rem;
+    }
+}
+
+@media screen and (min-width:1270px) {
+    .card-container{
+        margin-top: 3rem;
+        margin-bottom: 2.5rem;
+    }
+    .card-heading{
+        font-size: 1.65rem;
+    }
+    .card-description{
+        font-size: 1.15rem;
+    }
+}
+
+.web-container{
+    max-width: 1280px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    padding: 1rem;
+}
+
+.web-image{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 95%;
+}
+
+.web-img{
+    width: 100%;
+    height: 100%;
+}
+
+.web-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    animation: slideFromRight 1s ease forwards;
+    opacity: 0;
+}
+
+@keyframes slideFromRight {
+
+    0% {
+        opacity: 0;
+        transform: translateX(100%);
+    }
+
+    100%{
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+.web-heading h1{
+    font-size: 2.2rem;
+}
+
+.web-description p{
+    font-size: 1.3rem;
+    font-weight: 400;
+}
+
+@media screen and (min-width:800px) {
+    .web-container{
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .web-image{
+        width: 90%;
+        height: 95%;
+    }
+    .web-content{
+        width: 100%;
+        height: 100%;
+        justify-content: start;
+        text-align: left;
+        padding-top: 2rem;
+    }
+    .web-heading h1{
+        font-size: 1.6rem;
+    }
+    .web-description p{
+        font-size: 1.3rem;
+    }
+}
+
+@media screen and (min-width:1024px) {
+    .web-image{
+        width: 90%;
+    }
+    .web-content{
+        width: 100%;
+        height: 100%;
+    }
+    .web-image{
+        width: 85%;
+    }
+    .web-heading h1{
+        font-size: 2.2rem;
+    }
+    .web-description p{
+        font-size: 1.5rem;
+    }
+}
+
+@media screen and (min-width:1100px) {
+    .web-content{
+        padding-top: 2.2rem;
+    }
+    .web-heading h1{
+        font-size: 2.5rem;
+    }
+    .web-description{
+        width: 100%;
+        padding-top: 1.5rem;
+    }
+    .web-description p{
+        font-size: 1.7rem;
+        font-weight: 300;
+    }
+    .web-image{
+        width: 90%;
+    }
+    .web-img{
+        height: 95%;
+    }
+}
+
+@media screen and (min-width:1210px) {
+    .web-heading h1{
+        font-size: 3rem;
+    }
+    .web-description p{
+        font-size: 1.9rem;
+    }
+}
+
+@media screen and (min-width:1280px) {
+    .web-heading h1{
+        font-size: 3.3rem;
+    }
+    .web-description p{
+        font-size: 1.9rem;
+    }
+}
+
+.main-container{
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+.main-heading{
+    padding: 2rem;
+}
+
+.main-heading h1{
+    font-size: 3rem;
+}
+
+.main-content{
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    padding: 1rem;
+    gap: 2rem;
+}
+
+.cards-body{
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+    padding: 1rem;
+    text-align: left;
+    border-radius: 1rem;
+    cursor: pointer;
+    border: 2px solid black;
+    transition: all 1s linear 0s;
+}
+
+.cards-body:hover{
+    transform: scale(1.05);
+}
+
+.cards-title{
+    width: 5rem;
+    height: 4rem;
+}
+
+.cards-heading{
+    font-size: 1.5rem;
+    font-weight: 400;
+}
+
+.cards-pera{
+    font-size: 1.2rem;
+    font-weight: 300;
+}
+
+@media screen and (min-width:768px) {
+    .main-content{
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .cards-heading{
+        font-size: 1.6rem;
+    }
+    .cards-pera{
+        font-size: 1.1rem;
+    }
+}
+
+@media screen and (min-width:1024px) {
+    .cards-title{
+        width: 6rem;
+        height: 5rem;
+    }
+    .cards-heading{
+        font-size: 1.7rem;
+    }
+    .cards-pera{
+        font-size: 1.2rem;
+    }
+}
+
+@media screen and (min-width:1150px) {
+    .main-content{
+        grid-template-columns: repeat(3, 1fr);
+        gap: 2.8rem;
+    }
+    .main-heading h1{
+        font-size: 4rem;
+    }
+    .cards-title{
+        width: 7.5rem;
+        height: 5.6rem;
+    }
+    .cards-heading{
+        font-size: 1.8rem;
+    }
+}
+
+.signUp-container{
+    max-width: 1280px;
+    margin: 1rem auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    padding: 2rem 1rem;
+}
+
+.signUp-heading h1{
+    font-size: 2rem;
+}
+
+.signUp-input{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 0.5rem 0rem;
+    overflow: hidden;
+    border: 3px solid black;
+}
+
+.signUp-input input{
+    border: none;
+    font-size: 1rem;
+}
+
+.signUp-button{
+    padding: 0.5rem 1rem;
+    font-size: 0.9rem;
+    color: white;
+    cursor: pointer;
+    border: none;
+    background-color: black;
+}
+
+.signUp-button:hover{
+    color: black;
+    border: 2px solid black;
+    background-color: white;
+}
+
+@media screen and (min-width:400px) {
+    .signUp-input{
+        width: 95%;
+        padding: 0.9rem 1rem;
+    }
+    .signUp-button{
+        padding: 0.5rem 1.5rem;
+    }
+}
+
+@media screen and (min-width:450px) {
+    .signUp-input{
+        width: 90%;
+    }
+    .signUp-button{
+        padding: 0.5rem 2rem;
+    }
+}
+
+@media screen and (min-width:500px) {
+    .signUp-input{
+        width: 85%;
+        padding: 0.9rem 1rem;
+    }
+    .signUp-input input{
+        font-size: 1.2rem;
+    }
+    .signUp-button{
+        padding: 1rem 2.2rem;
+        font-size: 1rem;
+    }
+    .signUp-heading h1{
+        font-size: 2rem;
+    }
+}
+
+@media screen and (min-width:600px) {
+    .signUp-input{
+        width: 91%;
+        padding: 1rem 2rem;
+    }
+    .signUp-input input{
+        font-size: 1.5rem;
+    }
+    .signUp-button{
+        padding: 1rem 2.7rem;
+        font-size: 1.2rem;
+    }
+}
+
+@media screen and (min-width:650px) {
+    .signUp-input{
+        width: 85%;
+    }
+}
+
+@media screen and (min-width:700px) {
+    .signUp-input{
+        max-width: 517px;
+    }
+}
+
+@media screen and (min-width:1000px) {
+    .signUp-container{
+        flex-direction: row;
+        justify-content: space-between;
+        margin-top: 3rem;
+        margin-bottom: 3rem;
+    }
+    .signUp-heading{
+        width: 50%;
+        text-align: left;
+    }
+    .signUp-heading h1{
+        font-size: 2.5rem;
+    }
+}
+
+@media screen and (min-width:1200px) {
+    .signUp-heading h1{
+        font-size: 3.3rem;
+    }
+    .signUp-button{
+        padding: 1.2rem 2.7rem;
+    }
+    .signUp-button:hover{
+        padding: 1.1rem 2.6rem;
+    }
+}
+
+.footer-container{
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+.footer-title{
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    gap: 1rem;
+}
+
+.footer-description p{
+    font-size: 1.2rem;
+    font-weight: 300;
+}
+
+.footer-content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footer-links{
+    display: flex;
+    justify-content: space-around;
+    gap: 2rem;
+    padding: 1rem;
+}
+
+.menu-links{
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+}
+
+.menu-links p{
+    font-size: 1.3rem;
+}
+
+.menu-links a{
+    color: black;
+    font-size: 1.2rem;
+    font-weight: 300;
+}
+
+.resources-links{
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+}
+
+.resources-links p{
+    font-size: 1.3rem;
+}
+
+.resources-links a{
+    color: black;
+    font-size: 1.2rem;
+    font-weight: 300;
+}
+
+.copyRight-content{
+    display: flex;
+    flex-direction: column;
+    padding: 1rem 1rem;
+    padding-top: 2.5rem;
+    gap: 1.5rem;
+}
+
+.logos{
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.logos img{
+    width: 2.1rem;
+    height: 2.1rem;
+}
+
+.reserved{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.reserved p{
+    font-weight: 300;
+}
+
+@media screen and (min-width:768px) {
+    .footer-content{
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .footer-title{
+        width: 50%;
+        height: 100%;
+        text-align: left;
+        gap: 3rem;
+    }
+    .footer-description{
+        width: 80%;
+    }
+    .footer-links{
+        text-align: right;
+    }
+    .menu-links, .resources-links{
+        gap: 1.3rem;
+    }
+    .menu-links p, .resources-links p{
+        font-size: 1.5rem;
+    }
+    .menu-links a, .resources-links a{
+        font-size: 1.4rem;
+    }
+    .copyRight-content{
+        flex-direction: row-reverse;
+        justify-content: space-between;
+        padding: 0;
+        padding-top: 2.5rem;
+        padding-bottom: 1.7rem;
+    }
+    .logos{
+        gap: 1.7rem;
+    }
+}
+
+@media screen and (min-width:900px) {
+    .footer-description{
+        width: 62%;
+    }
+}
+
+@media screen and (min-width:1024px) {
+    .footer-description{
+        width: 65%;
+    }
+}
+
+@media screen and (min-width:1280px) {
+    .footer-links{
+        padding: 0 0 1rem 1rem;
+    }
+    .footer-title{
+        padding: 0;
+    }
+    .footer-description{
+        width: 47%;
+    }
+}
